@@ -1,0 +1,79 @@
+/* detail.css */
+
+.content-detail {
+  padding: 1rem;
+  background-color: #FFEBCD; 
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 2rem auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.content-detail header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.content-detail h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.pokemon-detail {
+  text-align: center;
+}
+
+.pokemon-detail img {
+  max-width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.pokemon-detail h2 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.pokemon-detail p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0.25rem 0;
+}
+
+/* Estilização dos tipos de Pokémon mantendo as cores definidas em pokedex.css */
+.pokemon-detail .grass, .fire, .water, .electric, .ice, .ground, .flying, .poison, .fighting, .psychic, .dark, .rock, .bug, .ghost, .steel, .dragon, .fairy {
+  color: #fff;
+  padding: 0.5rem;
+  margin: 0.5rem auto;
+  border-radius: 1rem;
+  display: inline-block;
+  width: auto;
+}
+
+/* Botão de Voltar */
+#backButton {
+  padding: 0.5rem 1rem;
+  background-color: #6c79db;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  list-style-type: none;
+}
+
+#backButton:hover {
+  background-color: #5a68b1;
+}
+
+/* Adaptações responsivas podem ser adicionadas conforme necessário */
+@media screen and (max-width: 768px) {
+  .pokemon-detail img {
+    max-width: 70%;
+  }
+}
