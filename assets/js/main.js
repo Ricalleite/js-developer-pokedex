@@ -41,7 +41,10 @@ loadMoreButton.addEventListener('click', () => {
         loadPokemonItens(offset, newLimit)
 
         loadMoreButton.parentElement.removeChild(loadMoreButton)
-    } else {
-        loadPokemonItens(offset, limit)
-    }
+    } else loadPokemonItens(offset, limit)
 })
+
+function openPokemonDetailsById(pokemonNumber) {
+    const url = `/detail.html?number=${pokemonNumber}`;
+    window.open(url, '_blank');
+}
