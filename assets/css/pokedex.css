@@ -125,7 +125,15 @@
 .pokemon .detail img {
     max-width: 100%;
     height: 70px;
+    align-self: flex-end;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.pokemon .detail img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
 
 .pagination {
     display: flex;
