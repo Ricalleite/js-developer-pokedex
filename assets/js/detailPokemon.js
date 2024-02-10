@@ -7,7 +7,7 @@ function loadPokemonDetail() {
       return;
   }
 
-  pokemonApi.getPokemonDetailById(pokemonNumber)
+  pokeApi.getPokemonDetailById(pokemonNumber)
       .then(pokemon => renderPokemonDetails(pokemon))
       .catch(error => {
           console.error('Erro ao buscar detalhes do Pokémon:', error);
@@ -24,7 +24,7 @@ function renderPokemonDetails(pokemon) {
   let typesHtml = pokemon.types.map(type => `<p class="type ${type}">${type}</p>`).join('');
 
   detailElement.innerHTML = `
-    <img src="${pokemon.image}" alt="${pokemon.name}" class="pokemon-image">
+    <img src="${pokemon.photo}" alt="${pokemon.name}" class="pokemon-image">
     <h2>${pokemon.name} (#${pokemon.number})</h2>
     <p>ID: ${pokemon.number}</p>
     <p>Peso: ${pokemon.weight} kg</p>
